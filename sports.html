@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sports - ProNews</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+<header class="bg-black text-white shadow">
+  <div class="container mx-auto flex justify-between items-center p-4">
+    <!-- Logo -->
+    <h1 class="text-2xl font-bold">
+      <img src="images/logo news.png" width="130px">
+    </h1>
+
+    <!-- Hamburger Button (mobile) -->
+    <button id="menu-btn" class="md:hidden focus:outline-none">
+      <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+
+    <!-- Navbar Links -->
+   <nav id="menu" class="hidden md:flex space-x-6 font-medium">
+      <a href="index.html" class="hover:text-yellow-400">Home</a>
+      <a href="kota.html" class="hover:text-yellow-400">Kota</a>
+      <a href="baran.html" class="hover:text-yellow-400">Baran</a>
+      <a href="bundi.html" class="hover:text-yellow-400">Bundi</a>
+      <a href="jhalawar.html" class="hover:text-yellow-400">Jhalawar</a>
+    </nav>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 bg-black">
+    <a href="index.html" class="block hover:text-yellow-400">Home</a>
+    <a href="kota.html" class="block hover:text-yellow-400">Kota</a>
+    <a href="baran.html" class="block hover:text-yellow-400">Baran</a>
+    <a href="bundi.html" class="block hover:text-yellow-400">Bundi</a>
+    <a href="jhalawar.html" class="block hover:text-yellow-400">Jhalawar</a>
+  </div>
+</header>
+
+<!-- JS for toggler -->
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+  <!-- Page Banner -->
+  <div class="bg-green-500 text-white font-bold py-3 text-center text-xl">
+    🏆 Sports News
+  </div>
+
+  <!-- Main Content -->
+  <main class="container mx-auto my-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+    <!-- Left Section -->
+    <section class="lg:col-span-2 space-y-6">
+
+      <!-- News Item 1 -->
+      <div class="bg-white rounded shadow flex flex-col md:flex-row overflow-hidden hover:shadow-lg transition">
+        <img src="https://via.placeholder.com/300x200" alt="Sports News" class="w-full md:w-1/3 h-56 object-cover">
+        <div class="p-4 md:w-2/3">
+          <h2 class="text-xl font-bold mb-2">India Wins Cricket World Cup Final</h2>
+          <p class="text-sm text-gray-500 mb-2">October 4, 2025 | Sports</p>
+          <p class="mb-3">In a historic match, Team India lifted the World Cup trophy after a thrilling win against their rivals...</p>
+          <a href="#" class="text-green-600 font-semibold hover:underline">Read More →</a>
+        </div>
+      </div>
+
+      <!-- News Item 2 -->
+      <div class="bg-white rounded shadow flex flex-col md:flex-row overflow-hidden hover:shadow-lg transition">
+        <img src="https://via.placeholder.com/300x200" alt="Sports News" class="w-full md:w-1/3 h-56 object-cover">
+        <div class="p-4 md:w-2/3">
+          <h2 class="text-xl font-bold mb-2">Football League Kicks Off in Europe</h2>
+          <p class="text-sm text-gray-500 mb-2">October 3, 2025 | Sports</p>
+          <p class="mb-3">The new season of European football leagues began with stunning goals and passionate crowds filling the stadiums...</p>
+          <a href="#" class="text-green-600 font-semibold hover:underline">Read More →</a>
+        </div>
+      </div>
+
+      <!-- News Item 3 -->
+      <div class="bg-white rounded shadow flex flex-col md:flex-row overflow-hidden hover:shadow-lg transition">
+        <img src="https://via.placeholder.com/300x200" alt="Sports News" class="w-full md:w-1/3 h-56 object-cover">
+        <div class="p-4 md:w-2/3">
+          <h2 class="text-xl font-bold mb-2">Olympics 2028 Preparations Underway</h2>
+          <p class="text-sm text-gray-500 mb-2">October 2, 2025 | Sports</p>
+          <p class="mb-3">Countries across the globe are preparing athletes and infrastructure for the upcoming Olympic Games...</p>
+          <a href="#" class="text-green-600 font-semibold hover:underline">Read More →</a>
+        </div>
+      </div>
+
+      <!-- News Item 4 -->
+      <div class="bg-white rounded shadow flex flex-col md:flex-row overflow-hidden hover:shadow-lg transition">
+        <img src="https://via.placeholder.com/300x200" alt="Sports News" class="w-full md:w-1/3 h-56 object-cover">
+        <div class="p-4 md:w-2/3">
+          <h2 class="text-xl font-bold mb-2">Tennis Star Wins Grand Slam</h2>
+          <p class="text-sm text-gray-500 mb-2">October 1, 2025 | Sports</p>
+          <p class="mb-3">In a breathtaking match, the world’s top-ranked tennis player secured another Grand Slam victory...</p>
+          <a href="#" class="text-green-600 font-semibold hover:underline">Read More →</a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="space-y-6">
+      <div>
+        <h4 class="font-bold text-lg border-b-2 border-green-500 pb-1">Trending in Sports</h4>
+        <ul class="mt-3 space-y-2">
+          <li>🏏 Top IPL Performances</li>
+          <li>⚽ Messi & Ronaldo News</li>
+          <li>🎾 Wimbledon Highlights</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-bold text-lg border-b-2 border-green-500 pb-1">Advertisement</h4>
+        <img src="https://via.placeholder.com/300x250" alt="Ad" class="w-full rounded shadow">
+      </div>
+
+      <div>
+        <h4 class="font-bold text-lg border-b-2 border-green-500 pb-1">Other Categories</h4>
+        <div class="flex flex-wrap gap-2 mt-2">
+          <a href="politics.html" class="bg-black text-white px-3 py-1 rounded-full text-sm">Politics</a>
+          <a href="tech.html" class="bg-black text-white px-3 py-1 rounded-full text-sm">Tech</a>
+          <a href="entertainment.html" class="bg-black text-white px-3 py-1 rounded-full text-sm">Entertainment</a>
+        </div>
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black text-gray-300 text-center p-6 mt-10">
+    <p>© 2025 ProNews | Designed with ❤️</p>
+    <p>Follow us: 
+      <a href="#" class="text-green-400">Facebook</a> | 
+      <a href="#" class="text-green-400">Twitter</a>
+    </p>
+  </footer>
+
+</body>
+</html>
